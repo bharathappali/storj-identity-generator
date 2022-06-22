@@ -12,4 +12,6 @@ if ! [ -d "/app/identity" ]; then
 fi
 
 identity create storagenode
-mv /root/.local/share/storj/identity/* /app/identity/
+cd /root/.local/share/storj/identity
+zip -r storagenode.zip storagenode
+mv storagenode.zip /app/identity/

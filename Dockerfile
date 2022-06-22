@@ -1,7 +1,7 @@
 FROM ubuntu:latest
 
 RUN apt-get update \
-  && apt-get install -y curl unzip wget git \
+  && apt-get install -y curl unzip wget git zip \
   && mkdir -p /app \
   && cd /app \
   && curl -L https://github.com/storj/storj/releases/latest/download/identity_linux_amd64.zip -o identity_linux_amd64.zip \
