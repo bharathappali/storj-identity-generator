@@ -15,3 +15,5 @@ identity create storagenode
 cd /root/.local/share/storj/identity
 zip -r storagenode.zip storagenode
 mv storagenode.zip /app/identity/
+cd /root
+rm -rf /root/.local/share/*
