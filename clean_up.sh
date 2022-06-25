@@ -1,5 +1,7 @@
 #!/bin/bash
 
+docker ps --filter name=storj-identity-generator-* --filter status=running -aq | xargs docker stop
+
 storj_identies_home="${HOME}/storj-identies/*"
 for identity_folder in ${storj_identies_home}; do
 if [ -z "$(ls -A ${identity_folder})" ]; then

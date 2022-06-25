@@ -60,7 +60,6 @@ if [ -z "$(ls -A ${identity_folder})" ]; then
 fi
 done
 
-THRESHOLD=4
 random=$(echo $RANDOM | md5sum | head -c 20)
 for (( count=1;count<=${THRESHOLD};count++ ))
 do
